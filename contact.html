@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-hop | Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans antialiased text-gray-900">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/"><img src="./images/logo.png" alt="logo" width="100"></a>
+            <ul class="flex space-x-6">
+                <li><a href="/" class="hover:text-blue-500">Home</a></li>
+                <li><a href="/bike.html" class="hover:text-blue-500">Bike</a></li>
+                <li><a href="/app.html" class="hover:text-blue-500">App</a></li>
+                <li><a href="/contact.html" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-100 py-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold text-gray-800">Contact Us</h1>
+            <p class="mt-4 text-xl text-gray-600">We're here to help! Reach out to us with any inquiries.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Get in Touch</h2>
+            <form class="md:w-1/2 w-[90%] mx-auto">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name"
+                        class="w-full px-4 py-3 border rounded focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email"
+                        class="w-full px-4 py-3 border rounded focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Your Message</label>
+                    <textarea id="message" placeholder="Enter your message"
+                        class="w-full px-4 py-3 border rounded focus:outline-none focus:border-blue-500"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-600">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="bg-gray-100 py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Other Ways to Contact Us</h2>
+            <p class="mt-4 text-lg text-gray-700">You can also reach us through the following methods:</p>
+            <div class="mt-8 space-y-4">
+                <p><strong>Email:</strong> <a href="mailto:support@e-hop.co.uk"
+                        class="text-blue-500">support@e-hop.co.uk</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+440123456789" class="text-blue-500">+44 01234 56789</a></p>
+                <p><strong>Address:</strong> 123 e-hop Street, London, UK</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 text-white">
+        <div class="container mx-auto text-center">
+            <p>© 2024 e-hop | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

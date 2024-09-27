@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-hop | Our Bike</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes border-animation {
+      0% {
+        transform: scale(1.25);
+      }
+
+      100% {
+        transform: scale(1.5);
+      }
+    }
+
+    .anim {
+      animation: border-animation 2s ease-in-out infinite alternate;
+    }
+
+    .rotate-45 {
+      transform: rotate(45deg);
+    }
+
+    .rotate-0 {
+      transform: rotate(0deg);
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/"><img src="./images/logo.png" alt="logo" width="100"></a>
+      <ul class="flex space-x-6">
+        <li><a href="/" class="hover:text-blue-500">Home</a></li>
+        <li><a href="/bike.html" class="hover:text-blue-500">Bike</a></li>
+        <li><a href="/app.html" class="hover:text-blue-500">App</a></li>
+        <li><a href="/contact.html" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gray-100 py-20">
+    <div class="container mx-auto text-center relative">
+      <h1 class="text-4xl font-bold text-gray-800">Our e-hop Bike</h1>
+      <p class="mt-4 text-xl text-gray-600">The future of urban mobility</p>
+
+      <!-- Bike Image -->
+      <div class="relative mt-8">
+        <img src="./images/bike-b.png" alt="e-hop Bike" class="mx-auto md:w-[40%] w-[90%]">
+
+        <!-- Interactive icons over the bike image -->
+        <div class="absolute top-[5%] left-[45%]">
+          <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+            <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+            <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+          </button>
+          <div class="part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded">LED Dashboard &
+            Status light</div>
+        </div>
+
+        <div class="absolute top-[35%] md:left-[38%] left-[23%]">
+          <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+            <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+            <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+          </button>
+          <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+            Headlight</div>
+        </div>
+
+        <div class="absolute top-[28%] md:left-[56%] left-[63%]">
+          <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+            <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+            <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+          </button>
+          <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+            Mechanical Seat Post Lever</div>
+        </div>
+
+        <div class="absolute top-[40%] md:left-[54%] left-[60%]">
+          <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+            <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+            <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+          </button>
+          <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">IOT
+          </div>
+        </div>
+
+        <div class="absolute top-[45%] left-[51%]">
+          <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+            <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+            <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+          </button>
+          <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+            Swappable Battery</div>
+        </div>
+
+        <div class="absolute top-[75%] md:left-[35%] left-[15%]">
+          <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+            <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+            <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+          </button>
+          <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+            Anti-puncture Air Tire</div>
+        </div>
+
+        <div class="absolute top-[68%] md:left-[41%] left-[28%]">
+          <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+            <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+            <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+          </button>
+          <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">Wheel
+            Hub Lock</div>
+        </div>
+
+        <div class="absolute top-[70%] left-[50%]">
+          <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+            <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+            <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+          </button>
+          <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+            Metal Padel</div>
+        </div>
+
+        <div class="absolute top-[63%] md:left-[63%] left-[80%]">
+          <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+            <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+            <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+          </button>
+          <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+            Rear Motor</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Build Comfort Section -->
+  <section id="build-comfort" class="bg-gray-100 py-10 px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">Build Comfort</h2>
+      <p class="mt-4 text-lg text-gray-700">Ergonomically designed handlebars with Anti-puncture air tires give riders a
+        more comfortable riding experience.</p>
+    </div>
+  </section>
+
+  <section class="py-10">
+    <div class="container mx-auto text-center">
+      <img src="./images/bike-c.png" alt="bike image" class="mx-auto mt-8 w-full">
+    </div>
+  </section>
+
+  <section class="bg-[#F5F6F7] py-10">
+    <div class="container mx-auto text-center">
+      <img src="./images/bike-d.png" alt="bike image" class="mx-auto mt-8 w-full">
+    </div>
+  </section>
+
+  <section class="py-10 px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">Relax Arm Position and Wide View of the Road</h2>
+      <p class="mt-4 text-lg text-gray-700">The relaxed angle of the curved handlebar allows for a more relaxed arm
+        position and less pressure on your back, neck and wrists.</p>
+    </div>
+  </section>
+
+  <section class="bg-[#B1B1B1] py-10">
+    <div class="container mx-auto text-center">
+      <img src="./images/bike-arm.png" alt="bike image" class="mx-auto mt-8 w-full">
+    </div>
+  </section>
+
+  <!-- Bike Features Section -->
+  <section id="features" class="py-20 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center">Features of the e-hop Bike</h2>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Comfort & Design</h3>
+          <p class="text-lg text-gray-700">Our bikes are designed with ergonomic features, ensuring a smooth and
+            comfortable ride for both commuters and delivery drivers.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Eco-friendly Solar Panel</h3>
+          <p class="text-lg text-gray-700">Each bike is equipped with a solar panel on the basket to assist with
+            powering the lights, making it a green and energy-efficient choice for urban mobility.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Durable & Reliable</h3>
+          <p class="text-lg text-gray-700">Built to last with high-quality materials, our bikes are durable enough to
+            withstand everyday use, whether for commuting or heavy-duty delivery tasks.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Cargo Ready</h3>
+          <p class="text-lg text-gray-700">Our delivery bikes feature spacious rear cargo holders, perfect for carrying
+            larger items and enhancing delivery efficiency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Environment Friendly Section -->
+  <section id="eco-friendly" class="bg-gray-100 py-20 px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">Environment Friendly</h2>
+      <ul class="text-lg">
+        <li class="mt-4">Solar panel on the basket
+          to assist with powering the
+          light</li>
+        <li class="mt-2">e-hop will have a zero
+          emissions fleet and service
+          vehicles with all our
+          vehicles being powered by
+          certified renewable energy.
+          Unlike others, we have no
+          Scope 1 and 2 emissions
+          and we offset our Scope 3</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">Contact Us</h2>
+      <form class="mt-6 md:w-1/2 w-[90%] mx-auto">
+        <div class="mb-4">
+          <input type="text" placeholder="Your Name"
+            class="w-full px-4 py-3 border rounded focus:outline-none focus:border-blue-500">
+        </div>
+        <div class="mb-4">
+          <input type="email" placeholder="Your Email"
+            class="w-full px-4 py-3 border rounded focus:outline-none focus:border-blue-500">
+        </div>
+        <div class="mb-4">
+          <textarea placeholder="Your Message"
+            class="w-full px-4 py-3 border rounded focus:outline-none focus:border-blue-500"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-600">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6 text-white">
+    <div class="container mx-auto text-center">
+      <p>© 2024 e-hop | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Select all toggle icons
+    const toggleIcons = document.querySelectorAll('.toggle-icon');
+
+    // Add event listener to each icon
+    toggleIcons.forEach(icon => {
+      icon.addEventListener('click', function (event) {
+        // Prevent click from closing the info box
+        event.stopPropagation();
+
+        const infoBox = icon.nextElementSibling; // Part info box
+
+        // Toggle showing the part info and icon rotation
+        if (infoBox.classList.contains('hidden')) {
+          // Hide all other open info boxes
+          document.querySelectorAll('.part-info').forEach(info => info.classList.add('hidden'));
+          document.querySelectorAll('.toggle-icon').forEach(btn => btn.classList.remove('rotate-45'));
+
+          // Show current info and rotate + icon
+          infoBox.classList.remove('hidden');
+          icon.classList.add('rotate-45');
+        } else {
+          // Hide current info and reset icon rotation
+          infoBox.classList.add('hidden');
+          icon.classList.remove('rotate-45');
+        }
+      });
+    });
+
+    // Click anywhere else to close any open part info
+    document.body.addEventListener('click', function () {
+      document.querySelectorAll('.part-info').forEach(info => info.classList.add('hidden'));
+      document.querySelectorAll('.toggle-icon').forEach(icon => icon.classList.remove('rotate-45'));
+    });
+  </script>
+</body>
+
+</html>
