@@ -35,22 +35,24 @@
     <section class="py-20">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-10">Get in Touch</h2>
-            <form class="md:w-1/2 w-[90%] mx-auto">
+            <form action="https://api.web3forms.com/submit" method="POST" class="md:w-1/2 w-[90%] mx-auto">
+                <input type="hidden" name="access_key" value="5ec974e9-7d92-4167-a83b-abcfbdbcab60">
                 <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Your Name</label>
-                    <input type="text" id="name" placeholder="Enter your name"
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Your Name*</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required
                         class="w-full px-4 py-3 border rounded focus:outline-none focus:border-blue-500">
                 </div>
                 <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Your Email</label>
-                    <input type="email" id="email" placeholder="Enter your email"
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Your Email*</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required
                         class="w-full px-4 py-3 border rounded focus:outline-none focus:border-blue-500">
                 </div>
                 <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Your Message</label>
-                    <textarea id="message" placeholder="Enter your message"
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Your Message*</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required
                         class="w-full px-4 py-3 border rounded focus:outline-none focus:border-blue-500"></textarea>
                 </div>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 <button type="submit" class="bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-600">Submit</button>
             </form>
         </div>
@@ -62,8 +64,8 @@
             <h2 class="text-3xl font-bold">Other Ways to Contact Us</h2>
             <p class="mt-4 text-lg text-gray-700">You can also reach us through the following methods:</p>
             <div class="mt-8 space-y-4">
-                <p><strong>Email:</strong> <a href="mailto:support@e-hop.co.uk"
-                        class="text-blue-500">support@e-hop.co.uk</a></p>
+                <p><strong>Email:</strong> <a href="mailto:ehoplondon@gmail.com"
+                        class="text-blue-500">ehoplondon@gmail.com</a></p>
                 <p><strong>Phone:</strong> <a href="tel:+440123456789" class="text-blue-500">+44 01234 56789</a></p>
                 <p><strong>Address:</strong> 123 e-hop Street, London, UK</p>
             </div>

@@ -47,14 +47,14 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-gray-100 py-20">
+  <section class="py-20">
     <div class="container mx-auto text-center relative">
       <h1 class="text-4xl font-bold text-gray-800">Our e-hop Bike</h1>
       <p class="mt-4 text-xl text-gray-600">The future of urban mobility</p>
 
       <!-- Bike Image -->
       <div class="relative mt-8">
-        <img src="./images/bike-b.png" alt="e-hop Bike" class="mx-auto md:w-[40%] w-[90%]">
+        <img src="./images/bike-b1.png" alt="e-hop Bike" class="mx-auto md:w-[40%] w-[90%]">
 
         <!-- Interactive icons over the bike image -->
         <div class="absolute top-[5%] left-[45%]">
@@ -150,15 +150,15 @@
     </div>
   </section>
 
-  <section class="py-10">
+  <section class="bg-[#B1B1B1] py-10">
     <div class="container mx-auto text-center">
-      <img src="./images/bike-c.png" alt="bike image" class="mx-auto mt-8 w-full">
+      <img src="./images/bike-c1.png" alt="bike image" class="mx-auto mt-8 w-full">
     </div>
   </section>
 
   <section class="bg-[#F5F6F7] py-10">
     <div class="container mx-auto text-center">
-      <img src="./images/bike-d.png" alt="bike image" class="mx-auto mt-8 w-full">
+      <img src="./images/bike-d1.png" alt="bike image" class="mx-auto mt-8 w-full">
     </div>
   </section>
 
@@ -229,19 +229,21 @@
   <section id="contact" class="py-20">
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold">Contact Us</h2>
-      <form class="mt-6 md:w-1/2 w-[90%] mx-auto">
+      <form action="https://api.web3forms.com/submit" method="POST" class="mt-6 md:w-1/2 w-[90%] mx-auto">
+        <input type="hidden" name="access_key" value="5ec974e9-7d92-4167-a83b-abcfbdbcab60">
         <div class="mb-4">
-          <input type="text" placeholder="Your Name"
+          <input type="text" name="name" placeholder="Your Name*" required
             class="w-full px-4 py-3 border rounded focus:outline-none focus:border-blue-500">
         </div>
         <div class="mb-4">
-          <input type="email" placeholder="Your Email"
+          <input type="email" name="email" placeholder="Your Email*" required
             class="w-full px-4 py-3 border rounded focus:outline-none focus:border-blue-500">
         </div>
         <div class="mb-4">
-          <textarea placeholder="Your Message"
+          <textarea name="message" placeholder="Your Message*" required
             class="w-full px-4 py-3 border rounded focus:outline-none focus:border-blue-500"></textarea>
         </div>
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         <button type="submit" class="bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-600">Submit</button>
       </form>
     </div>
