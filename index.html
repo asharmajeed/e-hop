@@ -6,6 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-hop | Affordable E-bikes</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes border-animation {
+      0% {
+        transform: scale(1.25);
+      }
+
+      100% {
+        transform: scale(1.5);
+      }
+    }
+
+    .anim {
+      animation: border-animation 2s ease-in-out infinite alternate;
+    }
+
+    .rotate-45 {
+      transform: rotate(45deg);
+    }
+
+    .rotate-0 {
+      transform: rotate(0deg);
+    }
+  </style>
 </head>
 
 <body class="font-sans antialiased text-gray-900">
@@ -30,12 +53,12 @@
       <h1 class="text-4xl font-bold text-white">HOP-ON HOP-OFF</h1>
       <p class="mt-4 mb-8 text-xl text-white">Launching soon!</p>
       <div class="flex flex-wrap justify-center items-center">
-        <div>
+        <div class="md:relative -top-16 left-20">
           <p class="sm:text-left text-center text-xl text-white">1 hour free daily</p>
           <p class="sm:text-left text-center text-xl text-white">Environmentally friendly</p>
           <p class="sm:text-left text-center text-xl text-white">Cheapest form of transport</p>
         </div>
-        <img src="./images/bike-b1.png" alt="e-hop Bike" class="md:w-[30%] w-[60%]">
+        <img src="./images/bike-a.png" alt="e-hop Bike" class="md:w-[30%] w-[60%]">
         <img src="./images/app-a1.png" alt="e-hop App" class="md:w-[12%] w-[20%]">
       </div>
     </div>
@@ -68,12 +91,108 @@
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold">About Our Bike</h2>
       <p class="mt-4 text-lg">Our bikes are tailored for everyday commuters and delivery workers.</p>
-      <div class="flex flex-wrap justify-center items-center">
-        <img src="./images/bike-b2.png" alt="e-hop Bike" class="mx-auto mt-8 md:w-[20%] w-[45%]">
-        <img src="./images/bike-b1.png" alt="e-hop Bike" class="mx-auto mt-8 md:w-[40%] w-[90%]">
-        <img src="./images/bike-b3.png" alt="e-hop Bike" class="mx-auto mt-8 md:w-[20%] w-[45%]">
+      <div class="flex md:flex-row flex-col justify-center items-center">
+        <img src="./images/bike-b2.png" alt="e-hop Bike" class="mx-auto mt-8 md:w-[15%] w-[45%]">
+        <div class="relative mt-8">
+          <img src="./images/bike-b1.png" alt="e-hop Bike" class="mx-auto md:w-[40%] w-[90%]">
+
+          <!-- Interactive icons over the bike image -->
+          <div class="absolute top-[5%] left-[45%]">
+            <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+              <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+              <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+            </button>
+            <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">LED
+              Dashboard &
+              Status light</div>
+          </div>
+
+          <div class="absolute top-[35%] md:left-[38%] left-[23%]">
+            <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+              <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+              <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+            </button>
+            <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+              Headlight</div>
+          </div>
+
+          <div class="absolute top-[35%] md:left-[65%] left-[82%]">
+            <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+              <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+              <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+            </button>
+            <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+              Taillight</div>
+          </div>
+
+          <div class="absolute top-[28%] md:left-[56%] left-[63%]">
+            <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+              <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+              <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+            </button>
+            <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+              Mechanical Seat Post Lever</div>
+          </div>
+
+          <div class="absolute top-[40%] md:left-[54%] left-[60%]">
+            <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+              <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+              <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+            </button>
+            <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">IOT
+            </div>
+          </div>
+
+          <div class="absolute top-[45%] left-[51%]">
+            <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+              <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+              <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+            </button>
+            <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+              Swappable Battery</div>
+          </div>
+
+          <div class="absolute top-[75%] md:left-[35%] left-[15%]">
+            <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+              <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+              <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+            </button>
+            <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+              Anti-puncture Air Tire</div>
+          </div>
+
+          <div class="absolute top-[68%] md:left-[41%] left-[28%]">
+            <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+              <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+              <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+            </button>
+            <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+              Wheel
+              Hub Lock</div>
+          </div>
+
+          <div class="absolute top-[70%] left-[50%]">
+            <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+              <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+              <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+            </button>
+            <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+              Metal Padel</div>
+          </div>
+
+          <div class="absolute top-[63%] md:left-[63%] left-[80%]">
+            <button class="toggle-icon flex items-center justify-center w-7 h-7 text-white rounded-full relative">
+              <div class="anim absolute top-0 left-0 w-7 h-7 bg-blue-500 opacity-40 rounded-full"></div>
+              <div class="absolute top-0 left-0 w-7 h-7 bg-blue-500 rounded-full z-10">+</div>
+            </button>
+            <div class="relative part-info hidden mt-2 text-blue-500 font-semibold bg-white py-2 px-4 rounded z-20">
+              Rear Motor</div>
+          </div>
+        </div>
+        <img src="./images/bike-b3.png" alt="e-hop Bike" class="mx-auto mt-8 md:w-[15%] w-[45%]">
       </div>
-      <a href="/e-hop/bike.html" class="inline-block mt-6 bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-600">Read
+      <a href="/e-hop/bike.html"
+        class="inline-block mt-6 bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-600">Read
         More</a>
     </div>
   </section>
@@ -195,6 +314,41 @@
     </div>
   </footer>
 
+  <script>
+    // Select all toggle icons
+    const toggleIcons = document.querySelectorAll('.toggle-icon');
+
+    // Add event listener to each icon
+    toggleIcons.forEach(icon => {
+      icon.addEventListener('click', function (event) {
+        // Prevent click from closing the info box
+        event.stopPropagation();
+
+        const infoBox = icon.nextElementSibling; // Part info box
+
+        // Toggle showing the part info and icon rotation
+        if (infoBox.classList.contains('hidden')) {
+          // Hide all other open info boxes
+          document.querySelectorAll('.part-info').forEach(info => info.classList.add('hidden'));
+          document.querySelectorAll('.toggle-icon').forEach(btn => btn.classList.remove('rotate-45'));
+
+          // Show current info and rotate + icon
+          infoBox.classList.remove('hidden');
+          icon.classList.add('rotate-45');
+        } else {
+          // Hide current info and reset icon rotation
+          infoBox.classList.add('hidden');
+          icon.classList.remove('rotate-45');
+        }
+      });
+    });
+
+    // Click anywhere else to close any open part info
+    document.body.addEventListener('click', function () {
+      document.querySelectorAll('.part-info').forEach(info => info.classList.add('hidden'));
+      document.querySelectorAll('.toggle-icon').forEach(icon => icon.classList.remove('rotate-45'));
+    });
+  </script>
 </body>
 
 </html>
